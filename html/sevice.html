@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Our Services - Food Ordering Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+    }
+    .services-section {
+      padding: 60px 20px;
+      background-color: #fff;
+      text-align: center;
+    }
+    .services-section h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    .services-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 40px;
+    }
+    .service-card {
+      background-color: #f1f1f1;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 30px;
+      width: 300px;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+    .service-card:hover {
+      transform: translateY(-5px);
+    }
+    .service-icon {
+      font-size: 40px;
+      margin-bottom: 15px;
+      color: #ff6600;
+    }
+    .service-title {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: #222;
+    }
+    .service-description {
+      font-size: 16px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+       <li><a href="project.html"></a>Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#">Service</a></li>
+
+  <section class="services-section">
+    <h2>Our Services</h2>
+    <div class="services-container">
+      
+      <div class="service-card" data-info="Order meals quickly from top restaurants.">
+        <div class="service-icon">🍔</div>
+        <div class="service-title">Easy Online Ordering</div>
+        <p class="service-description">Browse menus, customize your meals, and order from your favorite restaurants with just a few clicks.</p>
+      </div>
+
+      <div class="service-card" data-info="Fast, reliable, and contactless delivery.">
+        <div class="service-icon">🚀</div>
+        <div class="service-title">Fast Delivery</div>
+        <p class="service-description">Get your food delivered hot and fresh at your doorstep in record time, every time.</p>
+      </div>
+
+      <div class="service-card" data-info="Choose from cards, wallets, or cash.">
+        <div. class="service-icon">💳</div>
+        <div class="service-title">Multiple Payment Options</div>
+        <p class="service-description">Pay with credit cards, debit cards, mobile wallets, or cash on delivery — your choice!</p>
+      </div>
+
+      <!-- <p class="service-card" data-info= "We're here 24/7 for your support."></p> -->
+        <div class="service-icon">📞</div>
+        <div class="service-title">24/7 Customer Support</div>
+        <p class="service-description">Need help? Our support team is available around the clock to assist you with your orders.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <script>
+    // Show welcome message on page load
+    // window.onload = function() {
+    //   alert("Welcome to our food ordering services!");
+    // };
+
+    // Add click listeners to all service cards
+    const cards = document.querySelectorAll('.service-card');
+    cards.forEach(card => {
+      card.addEventListener('click', () => {
+        const info = card.getAttribute('data-info');
+        alert(info);
+      });
+    });
+  </script>
+
+</body>
+</html>

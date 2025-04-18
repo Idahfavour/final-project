@@ -1,0 +1,93 @@
+ * {
+  margin: 0%;
+  padding: 0%;
+  font-family: 'Courier New', Courier, monospace;
+  box-sizing: border-box;
+ }
+
+body {
+  background: url(Back\ pic.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  color: #333;
+}
+nav {
+  background-color: white;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: red;
+  position: fixed;
+  width: 100%;
+}
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  
+
+}
+.h1{
+  justify-content: center;
+}
+.home {
+  display: flex;
+  gap: 10px;
+}
+.home a{
+  color: blue;
+  text-decoration: none;
+  padding: 10px 10px;
+  font-size: 15px;
+  cursor: pointer;
+}
+.home a:hover{
+  background-color: #333;
+  border-radius: 5px;
+  color: aqua;
+  text-decoration: underline;
+}
+.home li {
+  position: relative;
+}
+.home li a {
+  display: block;
+  padding: 10px 10px;
+  text-decoration: none;
+}
+.drop {
+  list-style: none;
+}
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: whitesmoke;
+  display: none;
+  list-style: none;
+  padding: 0;
+}
+.dropdown li a{
+  padding: 10px;
+  display: block;
+  font-size: 15px;
+}
+.drop:hover .dropdown{
+  display: block;
+}
+
+@media (max-width: 768px) {
+  nav .home {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav .home a {
+    display: block;
+    margin: 10px 0;
+  }
+}
+
+  

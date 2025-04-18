@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - Restaurant Website</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      font-size: 15px;
+      background: orange center fixed;
+      background-size: cover;
+      box-sizing: border-box;
+      padding: 20px;
+      max-width: 800px;
+      margin: 50px auto;
+      border-radius: 15px;
+    }
+    nav {
+      padding: 20px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      padding: 0;
+      margin: 0;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    label, input, textarea, select {
+      margin-bottom: 10px;
+    }
+    input[type="submit"], button {
+      padding: 10px;
+      background: #333;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+   input{
+    border-radius: 10px;
+    padding: 4px;
+    
+   }
+   select{
+    border-radius: 10px;
+   }
+   .delivery-method{
+    padding: 4px;
+   }
+   
+
+
+  </style>
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="project.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="sevice.html">Service</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="contact">
+      <h1>Get in Touch</h1>
+      <form>
+        <label for="customer_name" class="DOCTYPE">Name:</label>
+        <input type="text" id="customer_name" name="name" required>
+
+        <label for="email" class="DOCTYPE">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message" class="DOCTYPE">Message:</label>
+        <input id="message" name="message" required></input>
+
+        <label for="phone" class="DOCTYPE">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="address" class="DOCTYPE">Delivery Address:</label>
+        <input type="text" id="address" name="address" required>
+
+        <label for="quantity" class="DOCTYPE">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1" required>
+
+        <label for="delivery-method" class="DOCTYPE">Delivery Method:</label>
+        <select id="delivery-method" name="delivery_method" required>
+          <option value="pickup" class="DOCTYPE">Pickup</option>
+          <option value="delivery" class="DOCTYPE">Home Delivery</option>
+          <h2>Place Your Food Order</h2>
+      <button type="submit">Order Now</button>
+
+        </select>
+
+        <input type="submit" value="Submit">
+      </form>
+    </section>
+  </main>
+  <script src="project.js"></script>
+</body>
+</html>

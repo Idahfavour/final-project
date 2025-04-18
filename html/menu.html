@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Menu - Food Ordering Website</title>
+  <style>
+    body {
+      background-color: whitesmoke;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #ff6600;
+      padding: 10px 20px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+
+    .menu {
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    ul {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 0;
+    }
+
+    ul li {
+      list-style: none;
+      background: white;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    ul li:hover {
+      transform: scale(1.02);
+    }
+
+    .food {
+      width: 90%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      animation: fadeInZoom 0.8s ease-in-out;
+    }
+
+    @keyframes fadeInZoom {
+      from {
+        opacity: 0;
+        transform: scale(0.9);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      border: none;
+      background-color: #ff6600;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #e65c00;
+    }
+
+    @media screen and (max-width: 450px) {
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .food {
+        height: 80px;
+      }
+
+      ul {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+         <li><a href="project.html">Home</a></li> 
+        <li><a href="#">Menu</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="sevice.html">Service</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="menu">
+      <h1>Our Menu</h1>
+      <ul>
+        <li>
+          <h2>Nigerian Jollof Rice and Chicken</h2>
+          <p>₦2500</p>
+          <img src="Nigerian Fried Rice Recipe with Baked Chicken.jpg" alt="Jollof Rice" class="food">
+          <a href="contact.html" target="_blank">
+          <button onclick="alert('Added to order!')">Order Now</button>
+          </a>
+        </li>
+        <li>
+          <h2>Pizza</h2>
+          <p>₦2000</p>
+          <img src="pixzza.jpeg" alt="FNigerian Pizza" class="food">
+           <a href="contact.html" target="_blank">
+          <button onclick="alert('Added to order!')">Order Now</button>
+          </a>
+        </li>
+        <li>
+          <h2>Salad</h2>
+          <p>₦800</p>
+          <img src="cucumba salad.jpeg" alt="Salad" class="food">
+           <a href="contact.html" target="_blank">
+          <button onclick="alert('Added to order!')">Order Now</button>
+          </a>
+        </li>
+        <li>
+          <h2>Eba, Ogbono Soup and Meat</h2>
+          <p>₦3000</p>
+          <img src="semo and sea food.jpg" alt="Ogbono Soup" class="food">
+           <a href="contact.html" target="_blank"></a>
+          <button onclick="alert('Added to order!')">Order Now</button>
+        </li>
+        <li>
+          <h2>Eba, Egusi and Meat</h2>
+          <p>₦2500</p>
+          <img src="Egusi Soup.jpg" alt="Egusi Soup" class="food">
+           <a href="contact.html" target="_blank">
+          <button onclick="alert('Added to order!')">Order Now</button>
+          </a>
+        </li>
+        <li>
+          <h2>Semo, Vegetable Soup and Meat</h2>
+          <p>₦2500</p>
+          <img src="Food.jpg" alt="Vegetable Soup" class="food">
+           <a href="contact.html" target="_blank">
+          <button onclick="alert('Added to order!')">Order Now</button>
+          </a>
+        </li>
+        <li>
+          <h2>Large Vanilla Cake</h2>
+          <p>₦25000</p>
+          <img src="cake png.jpeg" alt="Vanilla Cake" class="food">
+          <a href="contact.html" target="_blank"></a>
+          </li>
+          <li>          
+          <p><img src="choco cake.jpeg" alt="Chocolate Cake" class="food">
+          <button onclick="alert('Added to order!')">Order Now</button>
+           <a href="contact.html" target="_blank">
+
+           </a></p>
+        </li>
+        <li>
+          <h2>Pounded Yam & Vegetable</h2>
+          <p>₦2000</p>
+          <img src="vegitable soup.jpg" alt="Pounded Yam" class="food">
+          <button onclick="alert('Added to order!')">Order Now</button>
+           <a href="contact.html" target="_blank"></a>
+        </li>
+        <li>
+          <h2>Moi Moi and Fish</h2>
+          <p>₦2000</p>
+          <img src="moi moi.jpg" alt="Moi Moi" class="food">
+          <button onclick="alert('Added to order!')">Order Now</button>
+           <a href="contact.html" target="_blank"></a>
+        </li>
+        <li>
+          <h2>Meatpie</h2>
+          <p>₦1500</p>
+          <img src="meatpie2.jpeg" alt="Meatpie" class="food">
+          <button onclick="alert('Added to order!')">Order Now</button>
+           <a href="contact.html" target="_blank"></a>
+        </li>
+        <li>
+          <h2>Ice Cream</h2>
+          <p>₦1500</p>
+          <img src="icecup 1.jpeg" alt="Ice Cream 1" class="food">
+          <button onclick="alert('Added to order!')">Order Now</button>
+        </li>
+        <li>
+          <img src="ice.jpeg" alt="Ice Cream 2" class="food">
+          <button onclick="alert('Added to order!')">Order Now</button>
+           <a href="contact.html" target="_blank"></a>
+        </li>
+        <li>
+          <h2>Goat Meat Pepper Soup</h2>
+          <p>₦2000</p>
+          <img src="Goat Meat Pepper Soup - Cooking With Claudy.jpg" alt="Goat Soup" class="food">
+          <a href="contact.html" target="_blank"></a>
+          </li>
+          <li>
+          <p><img src="Spicy _ Peppered GOATMEAT RECIPE.jpg" alt="Goat Soup 2" class="food">
+          <button onclick="alert('Added to order!')">Order Now</button>
+           <a href="contact.html" target="_blank"></a>
+           </P>
+        </li>
+        
+        <li>
+          <h2>Beans and Plantain</h2>
+          <p>₦2500</p>
+          <img src="beans and plantain.jpg" alt="Beans and Plantain" class="food">
+          <button onclick="alert('Added to order!')">Order Now</button>
+           <a href="contact.html" target="_blank"></a>
+        </li>
+        <li>
+          <h2>Shawarma</h2>
+          <p>₦2500</p>
+          <img src="shawama (1).jpg" alt="Shawarma" class="food">
+          <button onclick="alert('Added to order!')">Order Now</button>
+           <a href="contact.html" target="_blank"></a>
+        </li>
+        <li>
+          <h2>Amala and Green Soup</h2>
+          <p>₦3000</p>
+          <img src="amala and green soup.jpg" alt="Amala Soup" class="food">
+          <button onclick="alert('Added to order!')">Order Now</button>
+           <a href="contact.html" target="_blank"></a>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <script src="project.js"></script>
+</body>
+</html>
